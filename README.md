@@ -5,3 +5,11 @@ _Chhipa, P.C., Chippa, M.S., De, K., Saini, R., Liwicki, M., Shah, M.: Möbius t
 
 Source code coming soon...
 
+Pretrained models - https://huggingface.co/prakashchhipa/MPD_SSL
+ImageNet-PD benchmark dataset - https://huggingface.co/datasets/prakashchhipa/ImageNet-PD
+Two minutes summary on MPD - https://prakashchhipa.github.io/projects/mpd/
+
+
+
+
+
