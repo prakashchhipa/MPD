@@ -50,7 +50,7 @@ Pretrain a Vision Transformer (ViT) using DINO with Mobius transformations and a
 python -m torch.distributed.launch --nproc_per_node=8 main_dino_mobius_bgi.py --mobius_prob 0.8 --arch vit_small --data_path /path/to/imagenet/train --output_dir /path/to/saving_dir
 ```
 
-## Future Work
+## In-progress Work
 The source code for additional computer vision applications will be released later.
 
 
