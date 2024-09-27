@@ -131,8 +131,7 @@ def main():
             
     '''except Exception as e:
         print(e)
-        if 0 == dist.get_rank():
-            send_telegram(experiment= args.name, message=' Hello Prakash! SSL SimcLR with Mobius Model Training Crashed.')'''
+       
 
 '''from gpu_profile import trace_calls
 os.environ['GPU_DEBUG']='2'
@@ -245,12 +244,7 @@ def main_worker(gpu, ngpus, args):
     continue_training = args.iters != 0
     data_time, it_time = 0, 0
     if 0 == dist.get_rank():
-        if args.ckpt != '':
-            send_telegram(experiment= args.name, message=' Hello Prakash! Mobius Model Training Resumed.')
-        else:
-            send_telegram(experiment= args.name, message=' Hello Prakash! Mobius Model Training Started.')
-            
-            
+        
     test_logs = []
     model.eval()
     with torch.no_grad():
@@ -272,17 +266,7 @@ def main_worker(gpu, ngpus, args):
 
 
 
-def send_telegram(chat_id=-4047549936, experiment= None, message=" Hello Prakash! SimCLR SSL Model Training Completed."):
-    TOKEN = "5819045340:AAE0i1bkfFtSYNIix1nkNNRjR7ECttxAGYQ"
-    base_url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 
-    #base_url = f"https://api.telegram.org/bot{5819045340:AAE0i1bkfFtSYNIix1nkNNRjR7ECttxAGYQ}/sendMessage"
-    payload = {
-        "chat_id": chat_id,
-        "text": f'{experiment}: {message}'
-    }
-    response = requests.post(base_url, data=payload)
-    return response.json()
 
 if __name__ == '__main__':
     
