@@ -3,6 +3,8 @@
 
 _Chhipa, P.C., Chippa, M.S., De, K., Saini, R., Liwicki, M., Shah, M.: Möbius transform for mitigating perspective distortions in representation learning. European Conference on Computer Vision. (ECCV 2024)_
 
+Visit Project Website - https://prakashchhipa.github.io/projects/mpd/
+
 ![Model Architecture](mobius_mpd.jpg)
 
 
