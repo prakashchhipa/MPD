@@ -53,6 +53,12 @@ python -m torch.distributed.launch --nproc_per_node=8 main_dino_mobius_bgi.py --
 ## In-progress Work
 The source code for additional computer vision applications will be released later.
 
+## GitHub repository credits
+[simclr-pytorch](https://github.com/AndrewAtanov/simclr-pytorch)
+[pytorch-classfication](https://github.com/pytorch/vision/tree/main/references/classification)
+
+
+
 
 
 
